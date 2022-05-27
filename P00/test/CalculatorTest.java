@@ -64,7 +64,7 @@ public class CalculatorTest {
 	@Test
 	public final void testDivideWith0Denominator() {
 		int a = 500;
-		int b = 5;
+		int b = 0;
 		
 		try {
 			Calculator cal = new Calculator();
@@ -77,6 +77,7 @@ public class CalculatorTest {
 		}
 	}
 	
+	@Test
 	public final void testDivideWithout0Denominator() {
 		int a = 800;
 		int b = 100;
